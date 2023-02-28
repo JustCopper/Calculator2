@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun btn_plus(view: View){
-        var temp = regex2.find(all_value_box)?.value.toString()
+        val temp = regex2.find(all_value_box)?.value.toString()
         if (current_value.toDoubleOrNull() is Double && !temp.contains("*") && !temp.contains("/") && !temp.contains("-") && !temp.contains("+")) {
             current_value = ""
             all_value_box += "+"
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun btn_minus(view: View){
-        var temp = regex2.find(all_value_box)?.value.toString()
+        val temp = regex2.find(all_value_box)?.value.toString()
         if (current_value.toDoubleOrNull() is Double && !temp.contains("*") && !temp.contains("/") && !temp.contains("-") && !temp.contains("+")) {
             current_value = ""
             all_value_box += "-"
@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun btn_del(view: View){
-        var temp = regex2.find(all_value_box)?.value.toString()
+        val temp = regex2.find(all_value_box)?.value.toString()
         if (current_value.toDoubleOrNull() is Double && !temp.contains("*") && !temp.contains("/") && !temp.contains("-") && !temp.contains("+")) {
             current_value = ""
             all_value_box += "/"
@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun btn_ymnoj(view: View){
-        var temp = regex2.find(all_value_box)?.value.toString()
+        val temp = regex2.find(all_value_box)?.value.toString()
         if (current_value.toDoubleOrNull() is Double && !temp.contains("*") && !temp.contains("/") && !temp.contains("-") && !temp.contains("+") ) {
             current_value = ""
             all_value_box += "*"
@@ -158,8 +158,8 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun btn_calculate(view: View){
-        var primer = regex1.findAll(all_value_box).map{it.value}.toMutableList()
-        var znak = (regex2.find(all_value_box) )
+        val primer = regex1.findAll(all_value_box).map{it.value}.toMutableList()
+        val znak = (regex2.find(all_value_box) )
 
 //        println(primer[0].toDouble())
 //        println(primer[1].toDouble())

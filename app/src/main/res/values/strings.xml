@@ -5,11 +5,16 @@
     <string name="_5">5</string>
     <string name="_6">6</string>
     <string name="_9">9</string>
-    <string name="CE">CE</string>
     <string name="_8">8</string>
     <string name="_0">0</string>
     <string name="mydot2">,</string>
     <string name="_7">7</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
+    <string name="ac">AC</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="del">/</string>
+    <string name="ymnoj">*</string>
+    <string name="result">=</string>
 </resources>
